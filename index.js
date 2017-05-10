@@ -8,7 +8,6 @@ app.get("/add", function(req, res, next){
 		return res.status(422).json("Please provide valid Numberic values")
 	}
 	var result = a+b
-	console.log(result);
 	return res.status(200).json({result})
 })
 app.get("/subtract", function (req, res, next){
